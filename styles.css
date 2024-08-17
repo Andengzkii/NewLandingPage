@@ -1,17 +1,19 @@
 /* Base Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #f0f2f5; /* Light grey background color */
+    background-image: url('img/background.jpg'); /* Optional: background image */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the background image */
     margin: 0;
     padding: 0;
     color: #333;
     line-height: 1.6;
-    font-size: 16px; /* Base font size */
+    font-size: 16px;
 }
 
 header {
-    background: linear-gradient(91.9deg, rgb(93, 248, 219) 27.8%, rgb(33, 228, 246) 67%);
-    color: #000000;
+    background: linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);    color: #000000;
     padding: 20px 0;
     text-align: center;
     position: relative;
@@ -54,7 +56,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #77aaff;
+    background: #77d8ff;
     color: #fff;
     border-radius: 5px;
 }
@@ -64,7 +66,7 @@ nav ul li a:hover {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
@@ -96,16 +98,14 @@ ul {
 }
 
 ul li {
-    background: linear-gradient(91.9deg, rgb(93, 248, 219) 27.8%, rgb(33, 228, 246) 67%);
-    padding: 15px;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);    padding: 15px;
     margin-bottom: 10px;
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 
 ul li:hover {
-    background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
-}
+    background: linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);}
 
 a.cta-button {
     display: inline-block;
@@ -144,8 +144,7 @@ a.cta-button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(91.9deg, rgb(93, 248, 219) 27.8%, rgb(33, 228, 246) 67%);
-    color: #000000;
+    background: linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);    color: #000000;
     border-top: #005eff 3px solid;
     width: 100%; /* Ensure the footer takes the full width */
     box-sizing: border-box; /* Include padding in the element's total width and height */
@@ -192,6 +191,34 @@ footer {
 .screenshot-img:hover {
     transform: scale(1.50); /* Slight zoom on hover */
 }
+
+/* Basic button styling */
+#redirectButton {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding around the text */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure proper alignment */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Button hover effect */
+#redirectButton:hover {
+  background-color: #0056b3; /* Darker blue background on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Button active effect */
+#redirectButton:active {
+  background-color: #004494; /* Even darker blue when button is pressed */
+  transform: scale(0.98); /* Slightly shrink the button */
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     body {
