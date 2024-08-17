@@ -1,0 +1,265 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px; /* Base font size */
+}
+
+header {
+    background: linear-gradient(91.9deg, rgb(93, 248, 219) 27.8%, rgb(33, 228, 246) 67%);
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Base font size for header */
+    text-transform: uppercase;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: #77aaff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.menu-toggle {
+    display: none; /* Hide the hamburger icon */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.content {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.text-content {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+h2, h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background: linear-gradient(91.9deg, rgb(93, 248, 219) 27.8%, rgb(33, 228, 246) 67%);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+}
+
+a.cta-button {
+    display: inline-block;
+    background: #ff04f2;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.cta-button:hover {
+    background: #ff0080;
+    transform: translateY(-3px);
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq h3 {
+    margin: 0;
+    padding-bottom: 5px;
+    color: #333;
+    border-bottom: 2px solid #005eff;
+}
+
+.faq p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(91.9deg, rgb(93, 248, 219) 27.8%, rgb(33, 228, 246) 67%);
+    color: #000000;
+    border-top: #005eff 3px solid;
+    width: 100%; /* Ensure the footer takes the full width */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Image Styles */
+.section-img {
+    width: 5%;
+    max-width: 100px; /* Adjust based on your design */
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Size Image Styles */
+.icon-img {
+    width: 10px; /* Adjust width for icon size */
+    height: 10px; /* Adjust height for icon size */
+    border-radius: 10%; /* Make images circular */
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Screenshot Gallery */
+.screenshot-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; /* Space between screenshots */
+    margin-top: 30px;
+}
+
+.screenshot-img {
+    width: 100px; /* Set a smaller width for the screenshots */
+    max-width: 100%; /* Limit the size relative to the container */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add a smooth transition for hover effects */
+}
+
+.screenshot-img:hover {
+    transform: scale(1.50); /* Slight zoom on hover */
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px; /* Slightly smaller font size for tablets */
+    }
+
+    header h1 {
+        font-size: 2em; /* Adjust header font size for tablets */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Smaller font size for navigation links */
+    }
+
+    .cta-button {
+        font-size: 14px; /* Adjust font size for call-to-action buttons */
+    }
+
+    h2, h3 {
+        font-size: 1.5em; /* Slightly smaller font size for headings */
+    }
+
+    ul li {
+        font-size: 14px; /* Adjust font size for list items */
+    }
+
+    .section-img {
+        max-width: 100%; /* Ensure images fit within container on smaller screens */
+    }
+
+    .icon-img {
+        width: 40px; /* Adjust icon size for tablets */
+        height: 40px;
+    }
+}
+
+/* Extra Small Devices (Phones, 480px and up) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Smaller font size for phones */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Smaller header font size for phones */
+    }
+
+    nav ul li a {
+        font-size: 13px; /* Smaller font size for navigation links on phones */
+    }
+
+    .cta-button {
+        font-size: 12px; /* Smaller font size for call-to-action buttons */
+    }
+
+    h2, h3 {
+        font-size: 1.25em; /* Smaller font size for headings on phones */
+    }
+
+    ul li {
+        font-size: 13px; /* Adjust font size for list items on phones */
+    }
+
+    .section-img {
+        max-width: 100%; /* Ensure images fit within container on phones */
+    }
+
+    .icon-img {
+        width: 30px; /* Adjust icon size for phones */
+        height: 30px;
+    }
+}
