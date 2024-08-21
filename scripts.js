@@ -1,7 +1,7 @@
 // Function to get the user's location using IPinfo API
 async function getUserLocation() {
     const apiKey = '83402f6feec1bc'; // Replace with your actual IPinfo API key
-    const apiUrl = `https://ipinfo.io/json?token=${apiKey}`; // IPinfo API endpoint
+    const apiUrl = `https://ipinfo.io/json?token=83402f6feec1bc`; // IPinfo API endpoint
 
     try {
         const response = await fetch(apiUrl);
