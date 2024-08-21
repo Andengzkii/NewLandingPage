@@ -1,7 +1,7 @@
 // Function to get the user's location using IPinfo API
 async function getUserLocation() {
     const apiKey = '83402f6feec1bc'; // Replace with your actual IPinfo API key
-    const apiUrl = `https://ipinfo.io/json?token=83402f6feec1bc`; // IPinfo API endpoint
+    const apiUrl = `https://ipinfo.io/json?token=${apiKey}`; // IPinfo API endpoint
 
     try {
         const response = await fetch(apiUrl);
@@ -19,11 +19,17 @@ async function getUserLocation() {
 
 // Redirect based on location
 async function redirectBasedOnLocation() {
+    const currentLocation = window.location.href;
     const countryCode = await getUserLocation();
+    
     if (countryCode === 'BR') { // 'BR' is the country code for Brazil
-        window.location.href = 'https://5518win.com/index?type=4&channelId=7381&fb_dynamic_pixel=2774791946023763';
+        if (!currentLocation.includes('5518win.com')) {
+            window.location.href = 'https://5518win.com/index?type=4&channelId=7381&fb_dynamic_pixel=2774791946023763';
+        }
     } else {
-        window.location.href = 'https://newlandingpage.onrender.com';
+        if (!currentLocation.includes('newlandingpage.onrender.com')) {
+            window.location.href = 'https://newlandingpage.onrender.com';
+        }
     }
 }
 
